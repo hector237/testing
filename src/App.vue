@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import Menu from "@/components/Menu";
-import SideBar from "@/components/Side-bar";
+import Menu from "@/components/layouts/Menu";
+import SideBar from "@/components/layouts/Side-bar";
 
 export default {
   name: "App",
