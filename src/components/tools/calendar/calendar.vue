@@ -78,7 +78,7 @@ export default {
 
 
 <template>
-  <v-card shaped>
+  <v-card height="486">
     <v-sheet height="65">
       <v-toolbar flat>
         <v-btn black class="mr-4" color="success" @click="setToday" x-small fab>
