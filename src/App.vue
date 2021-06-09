@@ -10,12 +10,14 @@
       <!-- End of Side Bar -->
       <router-view />
     </v-main>
+    <Footer></Footer>
   </v-app>
 </template>
 
 <script>
 import Menu from "@/components/layouts/Menu";
 import SideBar from "@/components/layouts/Side-bar";
+import Footer from "@/components/layouts/Footer";
 
 export default {
   name: "App",
@@ -29,6 +31,7 @@ export default {
   components: {
     Menu,
     SideBar,
+    Footer,
   },
 };
 </script>
