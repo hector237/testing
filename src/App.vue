@@ -6,7 +6,7 @@
 
     <v-main>
       <!-- Side Bar -->
-      <SideBar :show_bar="show_bar"></SideBar>
+      <SideBar :show_bar="show_bar" @showMenu="menu"> </SideBar>
       <!-- End of Side Bar -->
       <router-view />
     </v-main>
@@ -27,7 +27,11 @@ export default {
       show_bar: false,
     };
   },
-  computed: {},
+  methods: {
+    menu(show_bar) {
+      this.show_bar = show_bar;
+    },
+  },
   components: {
     Menu,
     SideBar,

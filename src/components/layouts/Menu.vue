@@ -3,7 +3,7 @@
   <v-card dark color="grey lighten-4" flat tile>
     <v-toolbar color="warning">
       <v-app-bar-nav-icon
-        @click="$emit('update:show_bar', true)"
+        @click="$emit('update:show_bar', !show_bar)"
       ></v-app-bar-nav-icon>
       <v-toolbar-title>Web-Home</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -23,6 +23,10 @@ export default {
   data() {
     return {};
   },
-  props: {},
+  props: {
+    show_bar: {
+      type: Boolean,
+    },
+  },
 };
 </script>
