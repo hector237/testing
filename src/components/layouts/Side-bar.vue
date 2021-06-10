@@ -63,21 +63,17 @@ export default {
     return {
       selectedItem: 0,
       payments: [
-        { text: "Electricidad", icon: "electrical_services" },
-        { text: "Comida", icon: "restaurant" },
-        { text: "Telefono", icon: "phone" },
-        { text: "Gastos", icon: "attach_money" },
+        { text: "Electricidad", icon: "electrical_services", routes: "" },
+        { text: "Comida", icon: "restaurant", routes: "" },
+        { text: "Telefono", icon: "phone", routes: "" },
+        { text: "Gastos", icon: "attach_money", routes: "" },
       ],
-      payme: [
-        { text: "Dashboard", icon: "dashboard" },
-        { text: "Impuestos", icon: "payments" },
-        { text: "Usuario", icon: "account_circle" },
-      ],
+
       user: [
-        { text: "Agenda", icon: "event" },
-        { text: "Tareas", icon: "task" },
-        { text: "Contactos", icon: "info" },
-        { text: "Info", icon: "account_circle" },
+        { text: "Agenda", icon: "event", routes: "" },
+        { text: "Tareas", icon: "task", routes: "" },
+        { text: "Contactos", icon: "info", routes: "" },
+        { text: "Info", icon: "account_circle", routes: "" },
       ],
       show: false,
     };
