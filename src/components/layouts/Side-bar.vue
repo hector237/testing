@@ -21,6 +21,20 @@
     <v-divider></v-divider>
     <v-list nav dense>
       <!-- sub-groups of menu -->
+      
+          <v-list-item-content>
+            <v-list-item
+
+          
+          
+          to="/"
+        >
+          <v-list-item-icon>
+            <v-icon>dashboard</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title> Dashboard </v-list-item-title>
+        </v-list-item>
+      
       <v-list-group no-action sub-group>
         <template v-slot:activator>
           <v-list-item-content>
@@ -28,22 +42,27 @@
           </v-list-item-content>
         </template>
 
-        <v-list-item v-for="(item, i) in payments" :key="i" link>
+        <v-list-item
+          v-for="(item, i) in payments"
+          :key="i"
+          link
+          :to="item.routes"
+        >
           <v-list-item-icon>
             <v-icon v-text="item.icon"></v-icon>
           </v-list-item-icon>
-          <v-list-item-title v-text="item.text"></v-list-item-title>
+          <v-list-item-title v-text="item.text"> </v-list-item-title>
         </v-list-item>
       </v-list-group>
 
       <v-list-group no-action sub-group>
         <template v-slot:activator>
           <v-list-item-content>
-            <v-list-item-title>Actions</v-list-item-title>
+            <v-list-item-title>User</v-list-item-title>
           </v-list-item-content>
         </template>
 
-        <v-list-item v-for="(item, i) in user" :key="i" link>
+        <v-list-item v-for="(item, i) in user" :key="i" link class="">
           <v-list-item-icon>
             <v-icon v-text="item.icon"></v-icon>
           </v-list-item-icon>
@@ -63,7 +82,11 @@ export default {
     return {
       selectedItem: 0,
       payments: [
-        { text: "Electricidad", icon: "electrical_services", routes: "" },
+        {
+          text: "Electricidad",
+          icon: "electrical_services",
+          routes: "/payments/energy",
+        },
         { text: "Comida", icon: "restaurant", routes: "" },
         { text: "Telefono", icon: "phone", routes: "" },
         { text: "Gastos", icon: "attach_money", routes: "" },
