@@ -87,9 +87,9 @@ export default {
           icon: "electrical_services",
           routes: "/payments/energy",
         },
-        { text: "Comida", icon: "restaurant", routes: "" },
-        { text: "Telefono", icon: "phone", routes: "" },
-        { text: "Gastos", icon: "attach_money", routes: "" },
+        { text: "Comida", icon: "restaurant", routes: "/payments/food" },
+        { text: "Telefono", icon: "phone", routes: "/payments/phone" },
+        { text: "Gastos", icon: "attach_money", routes: "/payments/gastos" },
       ],
 
       user: [
