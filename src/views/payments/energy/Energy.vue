@@ -1,8 +1,11 @@
 <template>
-  <div>Hola seccion de energia</div>
+  <v-container>
+    <Table />
+  </v-container>
 </template>
 
 <script>
+import Table from "@/components/tools/table/table.vue";
 export default {
   name: "Energy",
 
@@ -11,5 +14,8 @@ export default {
   },
   computed: {},
   props: {},
+  components: {
+    Table,
+  },
 };
 </script>
